@@ -12,7 +12,7 @@ Maybe a [project template][1] is what I'm looking for.
 
 ## Goals
 
-[ ] WSGI server
+[x] WSGI server
 [ ] Postgres
 [ ] Redis
 [ ] AUTH_USER_MODEL

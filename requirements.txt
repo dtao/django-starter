@@ -1,1 +1,4 @@
 Django==2.1.1
+
+# WSGI server
+gunicorn==19.9.0
