@@ -15,7 +15,7 @@ Maybe a [project template][1] is what I'm looking for.
 [x] WSGI server
 [x] Postgres
 [ ] Redis
-[ ] AUTH_USER_MODEL
+[x] AUTH_USER_MODEL
 [ ] Preliminary register & login views
 [ ] Templates, with scss support (+ maybe Jinja down the road)
 [ ] Front-end assets w/ webpack
