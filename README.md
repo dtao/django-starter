@@ -13,7 +13,7 @@ Maybe a [project template][1] is what I'm looking for.
 ## Goals
 
 [x] WSGI server
-[ ] Postgres
+[x] Postgres
 [ ] Redis
 [ ] AUTH_USER_MODEL
 [ ] Preliminary register & login views
@@ -25,8 +25,17 @@ Maybe a [project template][1] is what I'm looking for.
 
 ## Setup
 
+Install library dependencies:
+
 ```
 pip install -r requirements-dev.txt
+```
+
+Set up a Postgres database:
+
+```
+createuser -d -E -R -S django_starter
+createdb -O django_starter django_starter
 ```
 
 [1]: https://docs.djangoproject.com/en/2.1/ref/django-admin/#cmdoption-startproject-template
