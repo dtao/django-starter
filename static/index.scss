@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    margin-top: -5vh;
+    text-align: center;
+
+    h1 {
+        display: inline-block;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 8vh;
+        font-weight: bold;
+        letter-spacing: -0.25vw;
+        margin: 0;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

@@ -17,8 +17,8 @@ Maybe a [project template][1] is what I'm looking for.
 [ ] Redis
 [x] AUTH_USER_MODEL
 [ ] Preliminary register & login views
-[ ] Templates, with scss support (+ maybe Jinja down the road)
-[ ] Front-end assets w/ webpack
+[x] Templates, with scss support (+ maybe Jinja down the road)
+[x] Front-end assets w/ webpack
 [ ] API pattern for serialization
 [ ] API pattern for pagination
 [ ] Tests w/ pytest
