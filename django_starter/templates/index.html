@@ -8,8 +8,7 @@
     <script src="{% static 'index.js' %}"></script>
 </head>
 <body>
-    <main class="container">
-        {% block content %}
+    <main>
         <h1>Django Starter</h1>
         <p>
             {% if request.user.is_authenticated %}
@@ -19,7 +18,6 @@
             <a href="{% url 'account:login' %}">Log in</a>
             {% endif %}
         </p>
-        {% endblock %}
     </main>
 </body>
 </html>

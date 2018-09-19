@@ -1,5 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
-
 body {
     margin: 0;
     padding: 0;
@@ -26,10 +24,5 @@ main {
             text-decoration: underline;
             cursor: pointer;
         }
-    }
-
-    form {
-        margin: auto;
-        text-align: left;
     }
 }
