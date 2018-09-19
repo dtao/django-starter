@@ -16,7 +16,8 @@ Maybe a [project template][1] is what I'm looking for.
 [x] Postgres
 [ ] Redis
 [x] AUTH_USER_MODEL
-[ ] Preliminary register & login views
+[x] Preliminary login view
+[ ] Preliminary registration view
 [x] Templates, with scss support (+ maybe Jinja down the road)
 [x] Front-end assets w/ webpack
 [ ] API pattern for serialization
