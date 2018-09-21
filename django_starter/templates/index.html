@@ -15,7 +15,8 @@
             Welcome, {{ request.user.username }}.
             <a href="{% url 'account:logout' %}">Log out</a>
             {% else %}
-            <a href="{% url 'account:login' %}">Log in</a>
+            <a href="{% url 'account:login' %}">Log in</a> or
+            <a href="{% url 'register' %}">Register</a>
             {% endif %}
         </p>
     </main>

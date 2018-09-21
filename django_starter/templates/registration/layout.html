@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Starter</title>
+    <link rel="stylesheet" href="{% static 'registration.css' %}" />
+    <script src="{% static 'registration.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
