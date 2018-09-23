@@ -1,0 +1,24 @@
+<form id="{{ form_id }}" method="POST">
+    {% csrf_token %}
+
+    {% for field in form.hidden_fields %}
+    {{ field }}
+    {% endfor %}
+
+    {% for field in form.visible_fields %}
+    <div class="form-group">
+        <input type="{{ field.widget.input_type }}" class="form-control" name="{{ field.name }}" placeholder="{{ field.label }}" value="{{ value }}" />
+        {% if field.errors %}
+        <small class="form-text text-danger">{{ field.errors|first }}</small>
+        {% elif field.help_text %}
+        <small class="form-text">{{ field.help_text }}</small>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <input class="btn btn-primary" type="submit" value="Log in" />
+    <a class="btn btn-link" href="{% url 'index' %}">Back</a>
+    {% if form.non_field_errors %}
+    <small class="form-text text-danger">{{ form.non_field_errors|first }}</small>
+    {% endif %}
+</form>

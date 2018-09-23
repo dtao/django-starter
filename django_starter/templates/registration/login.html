@@ -3,16 +3,5 @@
 {% load form_extras %}
 
 {% block content %}
-<form id="login-form" method="POST">
-    {% csrf_token %}
-
-    {% field form 'username' %}
-    {% field form 'password' %}
-
-    <input class="btn btn-primary" type="submit" value="Log in" />
-    <a class="btn btn-link" href="{% url 'index' %}">Back</a>
-    {% if form.non_field_errors %}
-    <small class="form-text text-danger">{{ form.non_field_errors|first }}</small>
-    {% endif %}
-</form>
+{% form_tag "login-form" form %}
 {% endblock %}

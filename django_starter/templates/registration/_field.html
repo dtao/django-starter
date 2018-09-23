@@ -1,8 +1,0 @@
-<div class="form-group">
-    <input type="{{ widget.input_type }}" class="form-control" name="{{ field.name }}" placeholder="{{ field.label }}" value="{{ value }}" />
-    {% if field.errors %}
-    <small class="form-text text-danger">{{ field.errors|first }}</small>
-    {% elif field.help_text %}
-    <small class="form-text">{{ field.help_text }}</small>
-    {% endif %}
-</div>
