@@ -3,20 +3,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Django Starter</title>
+    <title>Project</title>
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <script src="{% static 'index.js' %}"></script>
 </head>
 <body>
     <main>
-        <h1>Django Starter</h1>
+        <h1>Project</h1>
         <p>
             {% if request.user.is_authenticated %}
             Welcome, {{ request.user.display_name }}.
             <a href="{% url 'account:logout' %}">Log out</a>
             {% else %}
             <a href="{% url 'account:login' %}">Log in</a> or
-            <a href="{% url 'register' %}">Register</a>
+            <a href="{% url 'account:register' %}">Register</a>
             {% endif %}
         </p>
     </main>

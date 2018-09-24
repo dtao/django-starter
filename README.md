@@ -24,19 +24,10 @@ Maybe a [project template][1] is what I'm looking for.
 [ ] API pattern for pagination
 [ ] Tests w/ pytest
 
-## Setup
-
-Install library dependencies:
+## Usage
 
 ```
-pip install -r requirements-dev.txt
-```
-
-Set up a Postgres database:
-
-```
-createuser -d -E -R -S {{project_name}}
-createdb -O {{project_name}} {{project_name}}
+django-admin startproject --template=django_starter/template -n .env,README.md
 ```
 
 [1]: https://docs.djangoproject.com/en/2.1/ref/django-admin/#cmdoption-startproject-template
