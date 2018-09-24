@@ -13,10 +13,10 @@
         <p>
             {% if request.user.is_authenticated %}
             Welcome, {{ request.user.display_name }}.
-            <a href="{% url 'account:logout' %}">Log out</a>
+            <a href="{% url 'accounts:auth:logout' %}">Log out</a>
             {% else %}
-            <a href="{% url 'account:login' %}">Log in</a> or
-            <a href="{% url 'account:register' %}">Register</a>
+            <a href="{% url 'accounts:auth:login' %}">Log in</a> or
+            <a href="{% url 'accounts:register' %}">Register</a>
             {% endif %}
         </p>
     </main>

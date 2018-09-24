@@ -8,7 +8,7 @@ from project import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('account', include(('accounts.urls', 'accounts'), namespace='account')),
+    path('account/', include(('accounts.urls', 'accounts'), namespace='accounts')),
     path('admin/', admin.site.urls),
 ]
 
