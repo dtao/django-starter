@@ -10,7 +10,7 @@ from accounts.models import User
 class RegistrationForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = User
-        fields = ('username', 'email')
+        fields = ('username', 'real_name', 'email', 'password1', 'password2')
 
     real_name = forms.CharField(
         label=_("Real name"), required=False, strip=True,
