@@ -10,3 +10,8 @@ def form_tag(form, form_id, submit_label):
         'form_id': form_id,
         'submit_label': submit_label
     }
+
+
+@register.filter
+def field_value(field):
+    return field.value() or ''
