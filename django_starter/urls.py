@@ -1,4 +1,4 @@
-"""django_starter URL Configuration
+"""{{project_name}} URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path
 
-from django_starter import views
+from {{project_name}} import views
 
 urlpatterns = [
     path('', views.index, name='index'),

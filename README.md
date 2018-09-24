@@ -35,8 +35,8 @@ pip install -r requirements-dev.txt
 Set up a Postgres database:
 
 ```
-createuser -d -E -R -S django_starter
-createdb -O django_starter django_starter
+createuser -d -E -R -S {{project_name}}
+createdb -O {{project_name}} {{project_name}}
 ```
 
 [1]: https://docs.djangoproject.com/en/2.1/ref/django-admin/#cmdoption-startproject-template

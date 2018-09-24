@@ -1,1 +1,1 @@
-web: gunicorn $GUNICORN_ARGS django_starter.wsgi
+web: gunicorn $GUNICORN_ARGS {{project_name}}.wsgi

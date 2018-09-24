@@ -2,7 +2,7 @@ from django.contrib.auth import login
 from django.shortcuts import redirect
 from django.template.response import TemplateResponse
 
-from django_starter.forms import RegistrationForm
+from {{project_name}}.forms import RegistrationForm
 
 
 def index(request):
