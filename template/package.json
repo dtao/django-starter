@@ -4,7 +4,9 @@
   "description": "Like sourdough starter, but for Django",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
