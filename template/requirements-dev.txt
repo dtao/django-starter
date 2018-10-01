@@ -3,3 +3,7 @@
 
 # Used for running Procfile
 honcho==1.0.1
+
+# Test runner
+pytest==3.8.1
+pytest-django==3.4.3

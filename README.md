@@ -22,7 +22,7 @@ Maybe a [project template][1] is what I'm looking for.
 [x] Front-end assets w/ webpack
 [ ] API pattern for serialization
 [ ] API pattern for pagination
-[ ] Tests w/ pytest
+[x] Tests w/ pytest
 
 ## Usage
 
