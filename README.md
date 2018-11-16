@@ -14,7 +14,7 @@ Maybe a [project template][1] is what I'm looking for.
 
 [x] WSGI server
 [x] Postgres
-[ ] Redis
+[x] Redis
 [x] AUTH_USER_MODEL
 [x] Preliminary login view
 [x] Preliminary registration view

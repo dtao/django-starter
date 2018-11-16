@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 import dj_database_url
+import django_cache_url
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -95,6 +96,17 @@ DATABASES = {
         default='postgres://{{project_name}}@localhost:5432/{{project_name}}')
 }
 
+# Cache
+# https://docs.djangoproject.com/en/2.1/ref/settings/#caches
+
+CACHES = {
+    'default': django_cache_url.config(
+        # Allow this to be configured via environment variable, i.e. if a
+        # particular provider defines REDIS_URL, set
+        # CACHE_URL_PROPERTY=REDIS_URL.
+        os.getenv('CACHE_URL_PROPERTY', 'CACHE_URL'),
+        default='locmem://{{project_name}}')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
