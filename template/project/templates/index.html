@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Project</title>
+    <title>{{ APPLICATION_NAME }}</title>
     <link rel="stylesheet" href="{% static 'index.css' %}" />
     <script src="{% static 'index.js' %}"></script>
 </head>
 <body>
     <main>
-        <h1>Project</h1>
+        <h1>{{ APPLICATION_NAME }}</h1>
         <p>
             {% if request.user.is_authenticated %}
             Welcome, {{ request.user.display_name }}.
