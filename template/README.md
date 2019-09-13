@@ -6,6 +6,7 @@ Install library dependencies:
 
 ```
 pip install -r requirements-dev.txt
+npm install
 ```
 
 Set up a Postgres database:
@@ -13,6 +14,18 @@ Set up a Postgres database:
 ```
 createuser -d -E -R -S {{project_name}}
 createdb -O {{project_name}} {{project_name}}
+```
+
+Run migrations:
+
+```
+honcho run python manage.py migrate
+```
+
+Start the app:
+
+```
+honcho start
 ```
 
 ## Deployment
