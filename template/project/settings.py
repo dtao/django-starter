@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [allowed_host for allowed_host
 
 # Application definition
 
-APPLICATION_NAME = 'django-starter'
+APPLICATION_NAME = '{{project_name}}'
 
 AUTH_USER_MODEL = 'accounts.User'
 
