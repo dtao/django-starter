@@ -28,6 +28,17 @@ Start the app:
 honcho start
 ```
 
+## Testing
+
+To run the tests:
+
+```
+pytest
+```
+
+By convention, tests are organized per-module in every app's tests/ directory.
+For example, tests for models.py should be located in tests/test_models.py.
+
 ## Deployment
 
 The following environment variables are *required*:
