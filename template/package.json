@@ -1,28 +1,17 @@
 {
-  "name": "django-starter",
-  "version": "1.0.0",
-  "description": "Like sourdough starter, but for Django",
+  "name": "{{project_name}}",
+  "version": "0.1.0",
   "main": "webpack.config.js",
   "scripts": {
     "test": "jest",
     "build": "webpack",
     "postinstall": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dtao/django-starter.git"
-  },
   "keywords": [
     "python",
     "django",
     "template"
   ],
-  "author": "Dan Tao <daniel.tao@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dtao/django-starter/issues"
-  },
-  "homepage": "https://github.com/dtao/django-starter#readme",
   "devDependencies": {
     "bootstrap": "^4.1.3",
     "css-loader": "^1.0.0",

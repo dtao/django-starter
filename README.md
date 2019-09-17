@@ -27,7 +27,7 @@ Maybe a [project template][1] is what I'm looking for.
 ## Usage
 
 ```
-django-admin startproject --template=django_starter/template -n .env,README.md
+django-admin startproject --template=django_starter/template -e json -n .env,README.md
 ```
 
 [1]: https://docs.djangoproject.com/en/2.1/ref/django-admin/#cmdoption-startproject-template
