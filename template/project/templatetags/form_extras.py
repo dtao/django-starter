@@ -23,12 +23,6 @@ def is_textarea(field):
 
 
 @register.filter
-def field_label(field):
-    """Provide a suitable field label."""
-    return field.help_text or field.label
-
-
-@register.filter
 def field_value(field):
     """Provide a suitable field value defaulting to a blank string."""
     return field.value() or ''
