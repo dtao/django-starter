@@ -20,6 +20,7 @@ Maybe a [project template][1] is what I'm looking for.
 - [x] Preliminary registration view
 - [x] Templates, with scss support (+ maybe Jinja down the road)
 - [x] Front-end assets w/ webpack
+- [ ] Pattern for organizing API vs. web URL rules
 - [x] API pattern for serialization
 - [ ] API pattern for pagination
 - [x] Tests w/ pytest
